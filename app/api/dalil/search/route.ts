@@ -3,10 +3,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { DalilItem, SearchResponse } from "@/lib/types";
 import { findLocalVerifiedDalil } from "@/lib/dalil-database";
 
-const FALLBACK_MODELS = [
+// Preferred model order: gemini-3.1-flash-lite is fastest, lightest, and avoids 503 spikes
+const CANDIDATE_MODELS = [
+  "gemini-3.1-flash-lite",
   "gemini-flash-latest",
   "gemini-3.8-flash",
-  "gemini-3.1-flash-lite",
 ];
 
 const SYSTEM_PROMPT = `Anda adalah asisten khusus pencarian dalil Islam ("Pencarian Dalil Cepat").
@@ -92,11 +93,10 @@ export async function POST(req: NextRequest) {
 Filter sumber yang diminta: "${filter}".
 Kembalikan dalil dalam format JSON terstruktur sesuai skema.`;
 
-  let lastAiError: unknown = null;
   let parsedOutput: GeminiParsedOutput | null = null;
 
-  // Attempt generation across available models with fallback
-  for (const modelName of FALLBACK_MODELS) {
+  // Attempt generation across candidate models (starting with lightweight 3.1-flash-lite)
+  for (const modelName of CANDIDATE_MODELS) {
     try {
       const response = await ai.models.generateContent({
         model: modelName,
@@ -200,9 +200,9 @@ Kembalikan dalil dalam format JSON terstruktur sesuai skema.`;
         // Successful response received
         break;
       }
-    } catch (err: unknown) {
-      console.warn(`Model ${modelName} encountered error, trying next fallback if available:`, err);
-      lastAiError = err;
+    } catch {
+      // Graceful model fallback without emitting noisy stack traces during temporary upstream spikes
+      continue;
     }
   }
 
@@ -236,7 +236,6 @@ Kembalikan dalil dalam format JSON terstruktur sesuai skema.`;
       }
     }
 
-    // AI explicitly said unverified or no results matched
     // Check if local database has verified dalil for this query
     const localMatches = findLocalVerifiedDalil(query, filter);
     if (localMatches.length > 0) {
@@ -257,8 +256,7 @@ Kembalikan dalil dalam format JSON terstruktur sesuai skema.`;
     } satisfies SearchResponse);
   }
 
-  // If all AI models failed (e.g. 503 high demand spike, network, or empty)
-  console.error("All AI models failed, checking local verified database for query:", query, lastAiError);
+  // If all candidate AI models were temporarily busy, rely on our curated verified database
   const localMatches = findLocalVerifiedDalil(query, filter);
 
   if (localMatches.length > 0) {
@@ -270,7 +268,7 @@ Kembalikan dalil dalam format JSON terstruktur sesuai skema.`;
     } satisfies SearchResponse);
   }
 
-  // Clean unverified fallback instead of crashing
+  // Clean unverified fallback in accordance with the scientific trustworthiness rule
   return NextResponse.json({
     query,
     understoodIntent: `Pencarian dalil untuk topik "${query}"`,

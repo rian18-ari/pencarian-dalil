@@ -385,6 +385,202 @@ export const VERIFIED_DALIL_DATABASE: DalilItem[] = [
     authenticityGrade: 'Shahih (Muttafaq \'Alaih)',
     verified: true,
     topicKeywords: ['ukhuwah', 'cinta saudara', 'iman', 'kasih sayang', 'empati']
+  },
+
+  // --- SHALAT / SALAT ---
+  {
+    id: 'quran-salat-alankabut-45',
+    sourceType: 'quran',
+    reference: 'QS. Al-‘Ankabut [29]: 45',
+    surahOrBookName: 'Al-‘Ankabut',
+    verseOrNumber: 'Ayat 45',
+    arabicText: 'ٱتْلُ مَآ أُوحِىَ إِلَيْكَ مِنَ ٱلْكِتَٰبِ وَأَقِمِ ٱلصَّلَوٰةَ ۖ إِنَّ ٱلصَّلَوٰةَ تَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ ۗ وَلَذِكْرُ ٱللَّهِ أَكْبَرُ ۗ وَٱللَّهُ يَعْلَمُ مَا تَصْنَعُونَ',
+    translationId: 'Bacalah Kitab (Al-Qur’an) yang telah diwahyukan kepadamu (Muhammad) dan laksanakanlah salat. Sesungguhnya salat itu mencegah dari (perbuatan) keji dan mungkar. Dan (ketahuilah) mengingat Allah (salat) itu lebih besar (keutamaannya). Allah mengetahui apa yang kamu kerjakan.',
+    relevanceExplanation: 'Menegaskan keagungan salat sebagai benteng spiritual yang menjaga pelakunya dari perbuatan keji dan kemungkaran serta sarana tertinggi mengingat Allah.',
+    sourceUrl: 'https://quran.com/29/45',
+    authenticityGrade: 'Mutawatir (Al-Qur’an Al-Karim)',
+    verified: true,
+    topicKeywords: ['salat', 'shalat', 'sholat', 'ibadah', 'fahsya', 'keji', 'mungkar', 'tiang agama']
+  },
+  {
+    id: 'hadits-salat-bukhari-528',
+    sourceType: 'hadits',
+    reference: 'HR. Bukhari no. 528 & Muslim no. 667',
+    surahOrBookName: 'Shahih Al-Bukhari (Kitab Waktu-Waktu Salat)',
+    verseOrNumber: 'Hadis no. 528',
+    arabicText: 'أَرَأَيْتُمْ لَوْ أَنَّ نَهَرًا بِبَابِ أَحَدِكُمْ يَغْتَسِلُ فِيهِ كُلَّ يَوْمٍ خَمْسًا مَا تَقُولُ ذَلِكَ يُبْقِي مِنْ دَرَنِهِ قَالُوا لاَ يُبْقِي مِنْ دَرَنِهِ شَيْئًا قَالَ فَذَلِكَ مِثْلُ الصَّلَوَاتِ الْخَمْسِ يَمْحُو اللَّهُ بِهَا الْخَطَايَا',
+    translationId: 'Bagaimana pendapat kalian jika di depan pintu rumah salah seorang di antara kalian ada sebuah sungai yang mengalir, lalu ia mandi di sana lima kali sehari, apakah masih ada kotoran yang tersisa padanya? Para sahabat menjawab: Tidak tersisa sedikit pun kotoran padanya. Beliau bersabda: Demikianlah perumpamaan salat lima waktu, dengannya Allah menghapuskan dosa-dosa.',
+    relevanceExplanation: 'Perumpamaan indah dari Rasulullah ﷺ tentang fadhilah salat fardhu lima waktu sebagai pembersih jiwa dan penghapus dosa-dosa harian.',
+    sourceUrl: 'https://sunnah.com/bukhari:528',
+    authenticityGrade: 'Shahih (Muttafaq \'Alaih)',
+    verified: true,
+    topicKeywords: ['salat', 'shalat', 'sholat', 'salat 5 waktu', 'penghapus dosa', 'waktu shalat']
+  },
+
+  // --- SYUKUR ---
+  {
+    id: 'quran-syukur-ibrahim-7',
+    sourceType: 'quran',
+    reference: 'QS. Ibrahim [14]: 7',
+    surahOrBookName: 'Ibrahim',
+    verseOrNumber: 'Ayat 7',
+    arabicText: 'وَإِذْ تَأَذَّنَ رَبُّكُمْ لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ ۖ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِى لَشَدِيدٌۭ',
+    translationId: 'Dan (ingatlah) ketika Tuhanmu memaklumkan: "Sesungguhnya jika kamu bersyukur, niscaya Aku akan menambah (nikmat) kepadamu, tetapi jika kamu mengingkari (nikmat-Ku), maka pasti azab-Ku sangat berat."',
+    relevanceExplanation: 'Janji pasti dari Allah bahwa sikap bersyukur akan mengundang pertambahan nikmat yang berlipat ganda, sedangkan kufur nikmat membawa ancaman siksa.',
+    sourceUrl: 'https://quran.com/14/7',
+    authenticityGrade: 'Mutawatir (Al-Qur’an Al-Karim)',
+    verified: true,
+    topicKeywords: ['syukur', 'nikmat', 'bersyukur', 'tambah nikmat', 'kufur nikmat']
+  },
+  {
+    id: 'hadits-syukur-tirmidzi-1954',
+    sourceType: 'hadits',
+    reference: 'HR. At-Tirmidzi no. 1954 & Abu Dawud no. 4811',
+    surahOrBookName: 'Jami\' At-Tirmidzi (Kitab Kebaikan & Silaturahmi)',
+    verseOrNumber: 'Hadis no. 1954',
+    arabicText: 'مَنْ لَا يَشْكُرُ النَّاسَ لَا يَشْكُرُ اللَّهَ',
+    translationId: 'Barang siapa yang tidak berterima kasih kepada manusia, maka ia tidak bersyukur kepada Allah.',
+    relevanceExplanation: 'Menghubungkan rasa syukur kepada Allah dengan akhlak mulia dalam menghargai dan berterima kasih atas kebaikan sesama manusia.',
+    sourceUrl: 'https://sunnah.com/tirmidhi:1954',
+    authenticityGrade: 'Shahih (HR. At-Tirmidzi, dishahihkan Al-Albani)',
+    verified: true,
+    topicKeywords: ['syukur', 'terima kasih', 'akhlak', 'manusia', 'kebaikan']
+  },
+
+  // --- IKHLAS & NIAT ---
+  {
+    id: 'quran-ikhlas-albayyinah-5',
+    sourceType: 'quran',
+    reference: 'QS. Al-Bayyinah [98]: 5',
+    surahOrBookName: 'Al-Bayyinah',
+    verseOrNumber: 'Ayat 5',
+    arabicText: 'وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ',
+    translationId: 'Padahal mereka tidak diperintahkan melainkan agar menyembah Allah dengan ikhlas menaati-Nya semata-mata karena (menjalankan) agama, dan juga agar melaksanakan salat dan menunaikan zakat; dan yang demikian itulah agama yang lurus.',
+    relevanceExplanation: 'Ketetapan bahwa keikhlasan niat semata-mata mengharap ridha Allah adalah syarat utama diterimanya seluruh amal ibadah.',
+    sourceUrl: 'https://quran.com/98/5',
+    authenticityGrade: 'Mutawatir (Al-Qur’an Al-Karim)',
+    verified: true,
+    topicKeywords: ['ikhlas', 'niat', 'ibadah', 'lurus', 'amal']
+  },
+  {
+    id: 'hadits-niat-bukhari-1',
+    sourceType: 'hadits',
+    reference: 'HR. Bukhari no. 1 & Muslim no. 1907',
+    surahOrBookName: 'Shahih Al-Bukhari (Permulaan Wahyu)',
+    verseOrNumber: 'Hadis no. 1',
+    arabicText: 'إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى',
+    translationId: 'Sesungguhnya setiap amalan itu bergantung pada niatnya, dan sesungguhnya setiap orang akan mendapatkan sesuai dengan apa yang ia niatkan.',
+    relevanceExplanation: 'Hadis landasan utama dalam Islam yang menetapkan bahwa nilai, keabsahan, dan pahala dari setiap perbuatan berporos pada niat di dalam hati.',
+    sourceUrl: 'https://sunnah.com/bukhari:1',
+    authenticityGrade: 'Shahih (Muttafaq \'Alaih)',
+    verified: true,
+    topicKeywords: ['niat', 'ikhlas', 'amal', 'pahala', 'hijrah']
+  },
+
+  // --- WUDHU & BERSUCI (THAHARAH) ---
+  {
+    id: 'quran-wudhu-almaidah-6',
+    sourceType: 'quran',
+    reference: 'QS. Al-Ma’idah [5]: 6',
+    surahOrBookName: 'Al-Ma’idah',
+    verseOrNumber: 'Ayat 6',
+    arabicText: 'يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قُمْتُمْ إِلَى ٱلصَّلَوٰةِ فَٱغْسِلُوا۟ وُجُوهَكُمْ وَأَيْدِيَكُمْ إِلَى ٱلْمَرَافِقِ وَٱمْسَحُوا۟ بِرُءُوسِكُمْ وَأَرْجُلَكُمْ إِلَى ٱلْكَعْبَيْنِ',
+    translationId: 'Wahai orang-orang yang beriman! Apabila kamu hendak melaksanakan salat, maka basuhlah wajahmu dan tanganmu sampai ke siku, dan sapulah kepalamu dan (basuh) kedua kakimu sampai ke kedua mata kaki.',
+    relevanceExplanation: 'Ayat panduan rukun wudhu yang menetapkan tata cara dan anggota tubuh wajib yang harus dibasuh sebelum menunaikan salat.',
+    sourceUrl: 'https://quran.com/5/6',
+    authenticityGrade: 'Mutawatir (Al-Qur’an Al-Karim)',
+    verified: true,
+    topicKeywords: ['wudhu', 'wudlu', 'bersuci', 'thaharah', 'rukun wudhu', 'salat']
+  },
+  {
+    id: 'hadits-bersuci-muslim-223',
+    sourceType: 'hadits',
+    reference: 'HR. Muslim no. 223',
+    surahOrBookName: 'Shahih Muslim (Kitab Thaharah)',
+    verseOrNumber: 'Hadis no. 223',
+    arabicText: 'الطَّهُورُ شَطْرُ الإِيمَانِ',
+    translationId: 'Bersuci (kebersihan lahir dan batin) itu adalah setengah dari keimanan.',
+    relevanceExplanation: 'Menunjukkan betapa agung kedudukan thaharah/bersuci dalam syariat Islam hingga diposisikan sebagai separuh dari kesempurnaan iman.',
+    sourceUrl: 'https://sunnah.com/muslim:223',
+    authenticityGrade: 'Shahih (HR. Muslim)',
+    verified: true,
+    topicKeywords: ['wudhu', 'bersuci', 'thaharah', 'iman', 'kebersihan']
+  },
+
+  // --- MENAHAN AMARAH & PEMAAF ---
+  {
+    id: 'quran-marah-aliimran-134',
+    sourceType: 'quran',
+    reference: 'QS. Ali ‘Imran [3]: 134',
+    surahOrBookName: 'Ali ‘Imran',
+    verseOrNumber: 'Ayat 134',
+    arabicText: 'ٱلَّذِينَ يُنفِقُونَ فِى السَّرَّآءِ وَٱلضَّرَّآءِ وَٱلْكَاظِمِينَ ٱلْغَيْظَ وَٱلْعَافِينَ عَنِ ٱلنَّاسِ ۗ وَٱللَّهُ يُحِبُّ ٱلْمُحْسِنِينَ',
+    translationId: '(yaitu) orang-orang yang berinfak, baik di waktu lapang maupun sempit, dan orang-orang yang menahan amarahnya dan memaafkan (kesalahan) orang lain. Dan Allah mencintai orang-orang yang berbuat kebaikan.',
+    relevanceExplanation: 'Ciri utama orang-orang yang bertakwa yang dirindukan surga adalah mampu menahan amarah dan berjiwa pemaaf kepada orang lain.',
+    sourceUrl: 'https://quran.com/3/134',
+    authenticityGrade: 'Mutawatir (Al-Qur’an Al-Karim)',
+    verified: true,
+    topicKeywords: ['marah', 'menahan amarah', 'pemaaf', 'infak', 'takwa', 'akhlak']
+  },
+  {
+    id: 'hadits-marah-bukhari-6116',
+    sourceType: 'hadits',
+    reference: 'HR. Bukhari no. 6116',
+    surahOrBookName: 'Shahih Al-Bukhari (Kitab Adab)',
+    verseOrNumber: 'Hadis no. 6116',
+    arabicText: 'أَنَّ رَجُلاً، قَالَ لِلنَّبِيِّ صلى الله عليه وسلم أَوْصِنِي‏.‏ قَالَ ‏"‏ لاَ تَغْضَبْ ‏"‏‏.‏ فَرَدَّدَ مِرَارًا، قَالَ ‏"‏ لاَ تَغْضَبْ ‏"‏',
+    translationId: 'Bahwa ada seorang laki-laki berkata kepada Nabi ﷺ: "Berilah aku wasiat!" Beliau bersabda: "Janganlah engkau marah!" Orang itu mengulangi permintaannya beberapa kali, dan Nabi ﷺ tetap bersabda: "Janganlah engkau marah!"',
+    relevanceExplanation: 'Wasiat emas Rasulullah ﷺ yang diulang berkali-kali untuk menekankan bahaya amarah dan pentingnya mengendalikan emosi diri.',
+    sourceUrl: 'https://sunnah.com/bukhari:6116',
+    authenticityGrade: 'Shahih (HR. Bukhari)',
+    verified: true,
+    topicKeywords: ['marah', 'jangan marah', 'emosi', 'wasiat nabi', 'sabar']
+  },
+
+  // --- TAWAKKAL ---
+  {
+    id: 'quran-tawakkal-aththalaq-3',
+    sourceType: 'quran',
+    reference: 'QS. At-Talaq [65]: 3',
+    surahOrBookName: 'At-Talaq',
+    verseOrNumber: 'Ayat 3',
+    arabicText: 'وَمَن يَتَوَكَّلْ عَلَى ٱللَّهِ فَهُوَ حَسْبُهُۥٓ ۚ إِنَّ ٱللَّهَ بَٰلِغُ أَمْرِهِۦ ۚ قَدْ جَعَلَ ٱللَّهُ لِكُلِّ شَىْءٍۢ قَدْرًۭا',
+    translationId: 'Dan barang siapa bertawakal kepada Allah, niscaya Allah akan mencukupkan (keperluan)nya. Sesungguhnya Allah melaksanakan urusan-Nya. Sungguh, Allah telah mengadakan ketentuan bagi setiap sesuatu.',
+    relevanceExplanation: 'Jaminan kecukupan hidup dan perlindungan dari Allah bagi setiap hamba yang menyandarkan seluruh urusan dan harapannya kepada Allah.',
+    sourceUrl: 'https://quran.com/65/3',
+    authenticityGrade: 'Mutawatir (Al-Qur’an Al-Karim)',
+    verified: true,
+    topicKeywords: ['tawakkal', 'tawakal', 'rezeki', 'cukup', 'ketetapan allah']
+  },
+
+  // --- KEMATIAN / HARI AKHIR ---
+  {
+    id: 'quran-mati-aliimran-185',
+    sourceType: 'quran',
+    reference: 'QS. Ali ‘Imran [3]: 185',
+    surahOrBookName: 'Ali ‘Imran',
+    verseOrNumber: 'Ayat 185',
+    arabicText: 'كُلُّ نَفْسٍۢ ذَآئِقَةُ ٱلْمَوْتِ ۗ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ ٱلْقِيَٰمَةِ ۖ فَمَن زُحْزِحَ عَنِ ٱلنَّارِ وَأُدْخِلَ ٱلْجَنَّةَ فَقَدْ فَازَ ۗ وَمَا ٱلْحَيَوٰةُ ٱلدُّنْيَآ إِلَّا مَتَٰعُ ٱلْغُرُورِ',
+    translationId: 'Setiap yang bernyawa akan merasakan mati. Dan hanya pada hari Kiamat sajalah diberikan dengan sempurna balasanmu. Barang siapa dijauhkan dari neraka dan dimasukkan ke dalam surga, sungguh dia telah memperoleh kemenangan. Kehidupan dunia itu tidak lain hanyalah kesenangan yang memperdayakan.',
+    relevanceExplanation: 'Peringatan abadi tentang keniscayaan kematian bagi setiap makhluk dan penegasan bahwa kemenangan sejati adalah selamat dari neraka dan masuk surga.',
+    sourceUrl: 'https://quran.com/3/185',
+    authenticityGrade: 'Mutawatir (Al-Qur’an Al-Karim)',
+    verified: true,
+    topicKeywords: ['kematian', 'mati', 'maut', 'kiamat', 'surga', 'neraka', 'dunia']
+  },
+  {
+    id: 'hadits-mati-tirmidzi-2307',
+    sourceType: 'hadits',
+    reference: 'HR. At-Tirmidzi no. 2307 & Ibnu Majah no. 4258',
+    surahOrBookName: 'Jami\' At-Tirmidzi (Kitab Zuhud)',
+    verseOrNumber: 'Hadis no. 2307',
+    arabicText: 'أَكْثِرُوا ذِكْرَ هَاذِمِ اللَّذَّاتِ يَعْنِي الْمَوْتَ',
+    translationId: 'Perbanyaklah mengingat pemutus segala kelezatan, yaitu kematian.',
+    relevanceExplanation: 'Anjuran agung untuk senantiasa mengingat kematian agar hati senantiasa terjaga dari kelalaian dunia dan terdorong beramal shaleh.',
+    sourceUrl: 'https://sunnah.com/tirmidhi:2307',
+    authenticityGrade: 'Hasan Shahih (HR. At-Tirmidzi, dishahihkan Al-Albani)',
+    verified: true,
+    topicKeywords: ['kematian', 'mengingat mati', 'lezat', 'amal saleh', 'zuhud']
   }
 ];
 
