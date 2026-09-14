@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-arabic {
+    font-family: var(--font-amiri), 'Traditional Arabic', 'Scheherazade New', 'Noto Naskh Arabic', serif;
+    font-feature-settings: "cv01" on, "ss01" on;
+  }
+}
